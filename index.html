@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/447e2f511b.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
     <script></script>
@@ -15,52 +16,54 @@
   </head>
   <body>
     <header>
-      <div>
-        <p>Giga Gogosashvili</p>
+      <div class="logo">
+        <p>
+          <strong>Giga</strong> <br />
+          Gogosashvili
+        </p>
       </div>
       <nav class="menu">
         <ul>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="intro">
-        <section class="photo">
+        <div class="circle">
           <img src="./resources/giga.jpg" alt="giga gogosashvili" />
-          <p>
-            (he/him) <br />
-            Frontend Developer for:
-          </p>
-        </section>
-        <section class="motto">
+        </div>
+
+        <div class="motto">
           <h1>I love to create</h1>
           <p>
             Hi, I'm Giga, junior frontend developer, based in Katowice, Poland.
             <br />
+            <br />
             Things I love: study, experience new things, travel, work - only if
             I'm doing what I like xD
           </p>
-        </section>
+        </div>
       </div>
-      <div>
-        <section class="education">
+      <div class="about" id="about">
+        <div class="education">
           <h2>Education</h2>
+
           <ul>
             <li>
               <strong>Executive Master of Business Administration</strong
-              ><br />GFKM, RSM Erasmus University, 2020
+              ><br />GFKM, Erasmus University, 2020
             </li>
             <li>
               <strong>Academy of Young Diplomats</strong><br />European Academy
               of Diplomacy, 2018
             </li>
             <li>
-              <strong>Postgraduates in Human Resources Management</strong
-              ><br />School of Management of the University of Silesia, 2014
+              <strong>Postgraduate in HR</strong><br />University of Silesia,
+              2014
             </li>
             <li>
               <strong>Master of Polish Studies</strong><br />University of
@@ -71,13 +74,17 @@
               State University, 2011
             </li>
           </ul>
-        </section>
-        <section class="experience">
+        </div>
+        <div class="experience">
           <h2>Experience</h2>
           <ul>
             <li>
               <strong>Alumni Relations Coordinator</strong><br />University of
               Silesia, 2020-2022
+            </li>
+            <li>
+              <strong>Project Coordinator</strong><br />University of Silesia,
+              2020-2022
             </li>
             <li>
               <strong>International Development Specialist</strong
@@ -88,15 +95,15 @@
               ><br />University of Silesia, 2014-2019
             </li>
             <li>
-              <strong>Loan Officer</strong><br />Societe Generale in Georgia,
+              <strong>Loan Officer</strong><br />Societe Generale Group,
               2010-2011
             </li>
           </ul>
-        </section>
+        </div>
       </div>
-      <div class="skills-container">
+      <div class="skills" id="skills">
         <h2>Skills</h2>
-        <ul class="skills">
+        <ul class="skills-list">
           <li class="html" title="HTML">
             <i class="fa-brands fa-html5"></i>
           </li>
@@ -107,26 +114,38 @@
           <li class="react" title="React">
             <i class="fa-brands fa-react"></i>
           </li>
-          <li class="github"><i class="fa-brands fa-github"></i></li>
+          <li class="github" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </li>
         </ul>
       </div>
-      <div class="projects">
+      <div class="projects" id="projects">
         <h2>Projects</h2>
-        <img src="./resources/project-1jpg.jpeg" alt="Project nr 1" />
-        <p>Project nr 1</p>
-        <img src="./resources/project-2.jpg" alt="Project nr 2" />
-        <p>Project nr 2</p>
-        <img src="./resources/project-3.jpg" alt="Project nr 3" />
-        <p>Project nr 3</p>
+        <div class="projects-container">
+          <div>
+            <img src="./resources/project-1jpg.jpeg" alt="Project nr 1" />
+            <p>Project nr 1</p>
+          </div>
+          <div>
+            <img src="./resources/project-2.jpg" alt="Project nr 2" />
+            <p>Project nr 2</p>
+          </div>
+          <div>
+            <img src="./resources/project-3.jpg" alt="Project nr 3" />
+            <p>Project nr 3</p>
+          </div>
+        </div>
       </div>
     </main>
-    <footer>
-      <div class="contact">
+    <footer id="contact">
+      <div class="address">
         <h2>Contact</h2>
         <p>
-          <strong>Giga Gogosashvili</strong><br />gogosashvili@gmail.com <br />
+          gogosashvili@gmail.com <br />
           +48 533 490 744
         </p>
+      </div>
+      <div class="connect">
         <p>Connect with me</p>
         <ul class="social-media">
           <li class="icon-github">

@@ -2,8 +2,8 @@ p {
   font-size: 1.2rem;
 }
 
-p strong {
-  font-size: 4rem;
+.giga {
+  font-size: 3.8rem;
 }
 
 header {
@@ -13,16 +13,19 @@ header {
 
 .intro {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 4fr;
 
   padding-bottom: 20px;
   background-color: #93c6e7;
 }
 
+.left {
+  width: 340px;
+}
 .logo {
   display: inline-block;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   margin-left: 15px;
   margin-top: 5px;
@@ -63,14 +66,63 @@ header {
   height: 100%;
   margin-left: -50px;
 }
-/* .profession {
+
+.profession {
+  background-color: #aee2ff;
+  padding: 20px;
+  text-align: center;
+}
+
+.he {
   display: block;
-  margin: 2rem;
+  text-align: center;
+  font-style: italic;
+  color: #fedeff;
+}
+.codding {
   color: white;
-} */
+  margin: 10px;
+  margin-left: 0;
+}
+
+#clock {
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+#clock > div {
+  padding: 10px;
+  padding-left: 0;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.round {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #93c6e7;
+  display: inline-block;
+  color: white;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 1rem;
+  color: white;
+}
+
+#clock div > #days,
+#days-text {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 1px;
+  border: none;
+}
 
 .motto {
-  width: 300px;
   margin: 20px;
   justify-self: center;
 }
@@ -175,3 +227,11 @@ footer {
 .connect li a {
   color: white;
 }
+
+/* colors used:
+pink: #FEDEFF;
+darker blue: #93C6E7;
+lighter blue: #AEE2FF;
+light blue: #B9F3FC;
+
+*/

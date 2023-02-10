@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/447e2f511b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
-    <script></script>
+
     <title>Giga Gogosashvili</title>
   </head>
   <body>
     <header>
       <div class="logo">
         <p>
-          <strong>Giga</strong> <br />
+          <strong class="giga">Giga</strong> <br />
           Gogosashvili
         </p>
       </div>
@@ -33,19 +33,45 @@
     </header>
     <main>
       <div class="intro">
-        <div class="circle">
-          <img src="./resources/giga.jpg" alt="giga gogosashvili" />
+        <div class="left">
+          <div class="circle">
+            <img src="./resources/giga.jpg" alt="giga gogosashvili" />
+          </div>
+          <p class="he">(he/him)</p>
         </div>
 
         <div class="motto">
-          <h1>I love to create</h1>
+          <h1>I was born to create!</h1>
           <p>
-            Hi, I'm Giga, junior frontend developer, based in Katowice, Poland.
+            Hi 🙋‍♂️ I'm Giga, junior frontend developer, based in Katowice,
+            Poland.
             <br />
             <br />
-            Things I love: study, new experiences, travel, work - only if I'm
-            loving what I do xD
+            Things I love: new experiences, travel, dogs 🐶🐶 <br />
+            <br />
+            Things I hate: non-emphatic people, snakes, broccoli 🥦
           </p>
+        </div>
+      </div>
+      <div class="profession">
+        <p class="codding">I'm coding for:</p>
+        <div id="clock">
+          <div>
+            <span class="days" id="days"></span>
+            <div class="smalltext" id="days-text">Days</div>
+          </div>
+          <div>
+            <span class="hours round"></span>
+            <div class="smalltext">Hours</div>
+          </div>
+          <div>
+            <span class="minutes round"></span>
+            <div class="smalltext">Minutes</div>
+          </div>
+          <div>
+            <span class="seconds round"></span>
+            <div class="smalltext">Seconds</div>
+          </div>
         </div>
       </div>
       <div class="about" id="about">
@@ -177,5 +203,6 @@
       </div>
       <div class="copyright"></div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
